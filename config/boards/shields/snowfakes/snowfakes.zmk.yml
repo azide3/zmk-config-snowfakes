@@ -1,0 +1,15 @@
+file_format: "1"
+id: snowfakes
+name: Snowfakes
+type: shield
+url: https://github.com/saikocat/zmk-config-snowfakes
+requires: [pro_micro]
+exposes: [i2c_oled]
+features:
+  - keys
+  - display
+  - studio
+siblings:
+  - snowfakes_left
+  - snowfakes_right
+

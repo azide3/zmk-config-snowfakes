@@ -1,0 +1,9 @@
+# Copyright 2025 saikocat (@saikocat)
+# SPDX-License-Identifier: MIT
+
+config SHIELD_SNOWFAKES_LEFT
+    def_bool $(shields_list_contains,snowfakes_left)
+
+config SHIELD_SNOWFAKES_RIGHT
+    def_bool $(shields_list_contains,snowfakes_right)
+

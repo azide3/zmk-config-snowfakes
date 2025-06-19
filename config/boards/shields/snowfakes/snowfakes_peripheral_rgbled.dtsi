@@ -1,0 +1,31 @@
+// Copyright 2025 saikocat (@saikocat)
+// SPDX-License-Identifier: MIT
+
+// LED indicators using RGB led module
+// https://github.com/caksoylar/zmk-rgbled-widget
+#include <behaviors/rgbled_widget.dtsi>
+
+/ {
+    aliases {
+        led-red = &led0;
+        led-green = &led1;
+        led-blue = &led2;
+    };
+
+    leds {
+        compatible = "gpio-leds";
+        status = "okay";
+        led0: led_0 {
+            gpios = <&gpio0 31 GPIO_ACTIVE_LOW>;  // red LED, connected to P0.31
+            gpios = <&pro_micro 21 GPIO_ACTIVE_LOW>;
+        };
+        led1: led_1 {
+            gpios = <&gpio0 29 GPIO_ACTIVE_LOW>;  // green LED, connected to P0.29
+            gpios = <&pro_micro 20 GPIO_ACTIVE_LOW>;
+        };
+        led2: led_2 {
+            gpios = <&gpio0 2 GPIO_ACTIVE_LOW>;   // blue LED, connected to P0.02
+            gpios = <&pro_micro 19 GPIO_ACTIVE_LOW>;
+        };
+    };
+};
