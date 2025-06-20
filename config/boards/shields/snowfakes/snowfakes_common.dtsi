@@ -11,6 +11,7 @@
         zephyr,display = &oled;
         zmk,kscan = &kscan0;
         zmk,physical-layout = &snowfakes_layout;
+        zmk,matrix_transform = &default_transform;
     };
 
     kscan0: kscan0 {
