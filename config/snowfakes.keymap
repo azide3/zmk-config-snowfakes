@@ -9,6 +9,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/pointing.h>
 
 / {
     combos {
@@ -163,6 +164,36 @@
         combo_cmd_w {
             bindings = <&kp LG(W)>;
             key-positions = <0 1 2 3 0 1 2 3>;
+        };
+
+        combo_mouseclick_left {
+            bindings = <&mkp LCLK>;
+            key-positions = <3 13>;
+        };
+
+        combo_mouseclick_right {
+            bindings = <&mkp RCLK>;
+            key-positions = <2 12>;
+        };
+
+        combo_mouseclick_middle {
+            bindings = <&mkp MCLK>;
+            key-positions = <12 11 13>;
+        };
+
+        combo_change_lang_android {
+            bindings = <&kp LG(SPACE)>;
+            key-positions = <3 4 5 6>;
+        };
+
+        combo_homerow_scroll {
+            bindings = <&kp LG(LC(LA(T)))>;
+            key-positions = <8 19>;
+        };
+
+        combo_homerow_search {
+            bindings = <&kp LG(LC(LA(W)))>;
+            key-positions = <6 16>;
         };
     };
 
