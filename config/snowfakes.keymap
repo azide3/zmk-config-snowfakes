@@ -53,7 +53,7 @@
 
         combo_vol_down {
             timeout-ms = <25>;
-            bindings = <&kp C_VOLUME_UP>;
+            bindings = <&kp C_VOLUME_DOWN>;
             key-positions = <21 20>;
         };
 
