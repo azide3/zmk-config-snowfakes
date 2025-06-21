@@ -230,6 +230,11 @@
             bindings = <&kp LG(LC(LA(W)))>;
             key-positions = <6 16>;
         };
+
+        combo_skmr {
+            bindings = <&macro_skmr>;
+            key-positions = <31 23 34 26>;
+        };
     };
 
     behaviors {
