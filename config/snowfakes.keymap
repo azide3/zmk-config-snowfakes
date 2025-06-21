@@ -1,16 +1,14 @@
 // Copyright 2025 saikocat (@saikocat)
 // SPDX-License-Identifier: MIT
 
-#include <behaviors.dtsi>
-#include <dt-bindings/zmk/bt.h>
-#include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/outputs.h>
-
 #include <behaviors/rgbled_widget.dtsi>
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
 
 / {
     combos {
         compatible = "zmk,combos";
+
         combo_esc {
             timeout-ms = <50>;
             key-positions = <0 1>;
@@ -18,19 +16,49 @@
         };
     };
 
+    behaviors {
+        gqt: gqt {
+            compatible = "zmk,behavior-hold-tap";
+            label = "GQT";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <180>;
+            flavor = "tap-preferred";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         layer_base {
-            display-name = "BASE";
+            display-name = "qwerty";
             bindings = <
-                   &kp Q &kp W &kp E &kp R &kp T     &kp Y &kp U  &kp I     &kp O   &kp P
-                   &kp A &kp S &kp D &kp F &kp G     &kp H &kp J  &kp K     &kp L   &kp SEMI
-                   &kp Z &kp X &kp C &kp V &kp B     &kp N &kp M  &kp COMMA &kp DOT &kp FSLH
-                     &kp TAB &kp SPACE &kp LSHFT     &kp LCTRL &kp RET &kp ESC
+&gqt TILDE Q  &kp W  &kp E         &kp R            &kp T                 &kp Y                 &kp U                         &kp I                    &kp O                      &gqt SQT P
+&kp A         &kp S  &gqt TAB D    &gqt LEFT_GUI F  &kp G                 &gqt LS(LG(H)) H      &gqt LEFT_ALT J               &kp K                    &kp L                      &gqt MINUS SEMI
+&kp Z         &kp X  &gqt LG(C) C  &gqt LG(V) V     &gqt LG(B) B          &kp N                 &kp M                         &gqt LEFT_BRACKET COMMA  &gqt RIGHT_BRACKET PERIOD  &gqt NON_US_BACKSLASH SLASH
+                     &mo 1         &kp LSHIFT       &gqt LS(ENTER) ENTER  &gqt LG(SPACE) SPACE  &gqt LG(BACKSPACE) BACKSPACE  &to 1
+            >;
+        };
+
+        navi {
+            bindings = <
+&none  &none              &gqt LG(LEFT_ARROW) LC(LS(TAB))  &gqt LG(RIGHT) LC(TAB)  &kp LG(Z)      &none   &kp LA(LEFT)        &kp UP_ARROW           &kp LA(RIGHT)         &none
+&none  &kp LEFT_SHIFT     &sk LEFT_CONTROL                 &sk LEFT_GUI            &sk LEFT_ALT   &none   &gqt LG(LEFT) LEFT  &kp DOWN               &gqt LG(RIGHT) RIGHT  &none
+&to 2  &kp LA(LC(LG(Y)))  &kp LG(C)                        &kp LG(V)               &kp LG(LS(Z))  &none   &kp LA(LC(LG(Y)))   &kp LS(LC(LA(LG(Y))))  &none                 &kp LA(LC(LG(R)))
+                          &to 0                            &trans                  &trans         &trans  &trans              &none
+            >;
+        };
+
+        mouse {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
 };
-// vim: ft=dts et
 
+// vim: ft=dts et
