@@ -69,6 +69,56 @@
             bindings = <&kp EQUAL>;
             key-positions = <29 28>;
         };
+
+        combo_no1 {
+            bindings = <&kp NUMBER_1>;
+            key-positions = <34 26>;
+        };
+
+        combo_no2 {
+            bindings = <&kp NUMBER_2>;
+            key-positions = <34 27>;
+        };
+
+        combo_no3 {
+            bindings = <&kp NUMBER_3>;
+            key-positions = <34 28>;
+        };
+
+        combo_no4 {
+            bindings = <&kp NUMBER_4>;
+            key-positions = <34 16>;
+        };
+
+        combo_no5 {
+            bindings = <&kp N5>;
+            key-positions = <34 17>;
+        };
+
+        combo_no6 {
+            bindings = <&kp NUMBER_6>;
+            key-positions = <34 18>;
+        };
+
+        combo_no7 {
+            bindings = <&kp N7>;
+            key-positions = <34 6>;
+        };
+
+        combo_no8 {
+            bindings = <&kp N8>;
+            key-positions = <34 7>;
+        };
+
+        combo_no9 {
+            bindings = <&kp N9>;
+            key-positions = <34 8>;
+        };
+
+        combo_no0 {
+            bindings = <&kp N0>;
+            key-positions = <34 19>;
+        };
     };
 
     behaviors {
