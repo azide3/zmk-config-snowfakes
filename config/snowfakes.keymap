@@ -180,7 +180,7 @@
         combo_moom_toggle {
             timeout-ms = <25>;
             bindings = <&kp LA(LC(LG(E)))>;
-            key-positions = <1 3>;
+            key-positions = <1 11>;
         };
 
         combo_backspace {
