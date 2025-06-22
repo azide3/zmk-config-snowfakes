@@ -237,14 +237,16 @@
         };
 
         combo_mouseclick_4 {
+            timeout-ms = <15>;
             bindings = <&mkp MB4>;
             key-positions = <2 13>;
             timeout-ms = <15>;
         };
 
         combo_mouseclick_5 {
+            timeout-ms = <15>;
             bindings = <&mkp MB5>;
-            key-positions = <12 3>;
+            key-positions = <2 11>;
             timeout-ms = <15>;
         };
     };
