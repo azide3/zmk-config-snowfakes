@@ -17,7 +17,7 @@
 
         combo_esc {
             timeout-ms = <25>;
-            key-positions = <0 1>;
+            key-positions = <1 10>;
             bindings = <&kp ESC>;
         };
 
@@ -234,6 +234,18 @@
         combo_skmr {
             bindings = <&macro_skmr>;
             key-positions = <31 23 34 26>;
+        };
+
+        combo_mouseclick_4 {
+            bindings = <&mkp MB4>;
+            key-positions = <2 13>;
+            timeout-ms = <15>;
+        };
+
+        combo_mouseclick_5 {
+            bindings = <&mkp MB5>;
+            key-positions = <12 3>;
+            timeout-ms = <15>;
         };
     };
 
