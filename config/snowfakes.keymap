@@ -296,7 +296,7 @@
 
         mouse {
             bindings = <
-&trans    &trans     &trans     &trans     &trans    &msc SCRL_UP    &msc SCRL_LEFT  &mmv MOVE_UP    &msc SCRL_RIGHT  &trans
+&trans    &trans     &trans     &gqt LG(LEFT_ARROW) LC(LS(TAB))  &gqt LG(RIGHT) LC(TAB)    &msc SCRL_UP    &msc SCRL_LEFT  &mmv MOVE_UP    &msc SCRL_RIGHT  &trans
 &mkp MB5  &mkp RCLK  &mkp MCLK  &mkp LCLK  &mkp MB4  &msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans
 &trans    &trans     &trans     &trans     &trans    &trans          &trans          &trans          &trans           &trans
                      &to 0      &trans     &trans    &trans          &trans          &trans
@@ -314,32 +314,32 @@
 
         base_android {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &trans  &trans  &trans  &trans  &trans
+&gqt TILDE Q  &kp W  &kp E         &kp R            &kp T                   &kp Y             &kp U                    &kp I                    &kp O                      &gqt SQT P          
+&kp A         &kp S  &gqt TAB D    &gqt LEFT_GUI F  &kp G                   &gqt LS(LG(H)) H  &gqt LEFT_GUI J          &kp K                    &kp L                      &gqt MINUS SEMICOLON
+&kp Z         &kp X  &gqt LG(C) C  &gqt LG(V) V     &gqt LG(B) B            &kp N             &kp M                    &gqt LEFT_BRACKET COMMA  &gqt RIGHT_BRACKET PERIOD  &gqt BACKSLASH SLASH
+                     &mo 5         &kp LSHFT        &gqt LS(ENTER) ENTER    &kp SPACE         &gqt LA(BSPC) BACKSPACE  &to 5
             >;
         };
 
         nav_android {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &trans  &trans  &trans  &trans  &trans
-            >;
-        };
-
-        layer_6 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &trans  &trans  &trans  &trans  &trans
+&none           &msc SCRL_UP    &gqt K_BACK LS(LG(TAB))  &gqt K_FORWARD LG(TAB)  &kp LG(Z)        &msc SCRL_UP    &kp LG(LEFT)    &kp UP    &kp LG(RIGHT)   &kp PAGE_UP
+&msc SCRL_DOWN  &kp LEFT_SHIFT  &sk LCTRL                &sk LEFT_GUI            &sk LEFT_ALT     &msc SCRL_DOWN  &gqt HOME LEFT  &kp DOWN  &gqt END RIGHT  &kp PAGE_DOWN
+&to 6           &none           &kp LG(C)                &kp LG(V)               &kp LS(LG(Z))    &none           &trans          &trans    &trans          &trans
+                                &to 4                    &kp LSHFT               &trans           &trans          &trans          &trans
             >;
         };
 
         mouse_android {
+            bindings = <
+&none      &macro_doubleclick  &gqt K_BACK LS(LG(TAB))  &gqt K_FORWARD LC(LG(TAB))  &msc SCRL_UP      &msc SCRL_UP    &msc SCRL_RIGHT  &mmv MOVE_UP    &msc SCRL_LEFT   &kp PAGE_UP
+&kp LG(A)  &mkp RCLK           &mkp MCLK                &mkp LCLK                   &msc SCRL_DOWN    &msc SCRL_DOWN  &mmv MOVE_LEFT   &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp PAGE_DOWN
+&none      &none               &kp LG(C)                &kp LG(V)                   &none             &trans          &trans           &trans          &trans           &trans
+                               &to 4                    &trans                      &trans            &trans          &trans           &trans
+            >;
+        };
+
+        layer7 {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
