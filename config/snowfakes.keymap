@@ -298,7 +298,7 @@
             bindings = <
 &trans    &trans     &trans     &gqt LG(LEFT_ARROW) LC(LS(TAB))  &gqt LG(RIGHT) LC(TAB)    &msc SCRL_UP    &msc SCRL_LEFT  &mmv MOVE_UP    &msc SCRL_RIGHT  &trans
 &mkp MB5  &mkp RCLK  &mkp MCLK  &mkp LCLK  &mkp MB4  &msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans
-&trans    &trans     &trans     &trans     &trans    &trans          &trans          &trans          &trans           &trans
+&trans    &trans     &kp LG(C)  &kp LG(V)     &trans    &trans          &trans          &trans          &trans           &trans
                      &to 0      &trans     &trans    &trans          &trans          &trans
             >;
         };
@@ -332,7 +332,7 @@
 
         mouse_android {
             bindings = <
-&none      &macro_doubleclick  &gqt K_BACK LS(LG(TAB))  &gqt K_FORWARD LC(LG(TAB))  &msc SCRL_UP      &msc SCRL_UP    &msc SCRL_RIGHT  &mmv MOVE_UP    &msc SCRL_LEFT   &kp PAGE_UP
+&none      &none               &gqt K_BACK LS(LG(TAB))  &gqt K_FORWARD LC(LG(TAB))  &msc SCRL_UP      &msc SCRL_UP    &msc SCRL_RIGHT  &mmv MOVE_UP    &msc SCRL_LEFT   &kp PAGE_UP
 &kp LG(A)  &mkp RCLK           &mkp MCLK                &mkp LCLK                   &msc SCRL_DOWN    &msc SCRL_DOWN  &mmv MOVE_LEFT   &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp PAGE_DOWN
 &none      &none               &kp LG(C)                &kp LG(V)                   &none             &trans          &trans           &trans          &trans           &trans
                                &to 4                    &trans                      &trans            &trans          &trans           &trans
