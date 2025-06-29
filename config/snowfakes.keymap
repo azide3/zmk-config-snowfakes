@@ -281,7 +281,7 @@
 &gqt TILDE Q  &kp W  &kp E         &kp R            &kp T                 &kp Y                 &kp U                         &kp I                    &kp O                      &gqt SQT P
 &kp A         &kp S  &gqt TAB D    &gqt LEFT_GUI F  &kp G                 &gqt LS(LG(H)) H      &gqt LEFT_ALT J               &kp K                    &kp L                      &gqt MINUS SEMI
 &kp Z         &kp X  &gqt LG(C) C  &gqt LG(V) V     &gqt LG(B) B          &kp N                 &kp M                         &gqt LEFT_BRACKET COMMA  &gqt RIGHT_BRACKET PERIOD  &gqt NON_US_BACKSLASH SLASH
-                     &mo 1         &kp LSHIFT       &gqt LS(ENTER) ENTER  &gqt LG(SPACE) SPACE  &gqt LG(BACKSPACE) BACKSPACE  &to 1
+                     &mo 1         &kp LSHIFT       &gqt LS(ENTER) ENTER  &gqt LG(SPACE) SPACE  &gqt LG(BACKSPACE) BACKSPACE  &mo 7
             >;
         };
 
@@ -336,6 +336,15 @@
 &kp LG(A)  &mkp RCLK  &mkp MCLK                &mkp LCLK                   &msc SCRL_DOWN  &msc SCRL_DOWN  &mmv MOVE_LEFT   &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp PAGE_DOWN
 &none      &none      &kp LG(C)                &kp LG(V)                   &none           &trans          &trans           &trans          &trans           &trans
                       &to 4                    &trans                      &trans          &trans          &trans           &trans
+            >;
+        };
+
+        aerospace {
+            bindings = <
+&gqt LA(LC(NUMBER_1)) LA(NUMBER_1)  &gqt LA(LC(NUMBER_2)) LA(NUMBER_2)  &gqt LA(LC(NUMBER_3)) LA(NUMBER_3)  &gqt LA(LC(NUMBER_4)) LA(NUMBER_4)  &kp LA(LC(F))      &none  &none                             &gqt LC(LG(UP_ARROW)) LC(UP_ARROW)  &none                         &kp LA(LC(F))
+&none                               &none                               &kp LEFT_ALT                        &kp LEFT_GUI                        &kp LA(LS(LC(F)))  &none  &gqt LC(LG(LEFT)) LC(LEFT_ARROW)  &gqt LC(LG(DOWN)) LC(DOWN)          &gqt LC(LG(RIGHT)) LC(RIGHT)  &none
+&gqt LC(SLASH) LC(COMMA)            &none                               &none                               &none                               &none              &none  &kp LC(MINUS)                     &kp LC(KP_EQUAL)                    &none                         &kp LA(TAB)
+                                                                        &none                               &kp LEFT_SHIFT                      &none              &none  &none                             &none
             >;
         };
     };
