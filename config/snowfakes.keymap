@@ -220,13 +220,13 @@
         };
 
         combo_homerow_scroll {
-            timeout-ms = <15>;
+            timeout-ms = <25>;
             bindings = <&kp LG(LC(LA(T)))>;
             key-positions = <8 19>;
         };
 
         combo_homerow_search {
-            timeout-ms = <15>;
+            timeout-ms = <25>;
             bindings = <&kp LG(LC(LA(W)))>;
             key-positions = <6 16>;
         };
