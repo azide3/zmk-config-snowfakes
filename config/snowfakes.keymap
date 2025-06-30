@@ -323,19 +323,19 @@
 
         nav_android {
             bindings = <
-&none           &msc SCRL_UP    &gqt K_BACK LS(LG(TAB))  &gqt K_FORWARD LG(TAB)  &kp LG(Z)      &msc SCRL_UP    &kp LG(LEFT)    &kp UP    &kp LG(RIGHT)   &kp PAGE_UP
-&msc SCRL_DOWN  &kp LEFT_SHIFT  &sk LCTRL                &sk LEFT_GUI            &sk LEFT_ALT   &msc SCRL_DOWN  &gqt HOME LEFT  &kp DOWN  &gqt END RIGHT  &kp PAGE_DOWN
-&to 6           &none           &kp LG(C)                &kp LG(V)               &kp LS(LG(Z))  &none           &trans          &trans    &trans          &trans
-                                &to 4                    &kp LSHFT               &trans         &trans          &trans          &trans
+&none           &msc SCRL_UP    &gqt K_BACK LS(LG(TAB))  &gqt K_FORWARD LG(TAB)  &kp LG(Z)      &kp PAGE_UP    &kp LG(LEFT)    &kp UP    &kp LG(RIGHT)   &none
+&msc SCRL_DOWN  &kp LEFT_SHIFT  &sk LCTRL                &sk LEFT_GUI            &sk LEFT_ALT   &kp PAGE_DOWN  &gqt HOME LEFT  &kp DOWN  &gqt END RIGHT  &none
+&to 6           &none           &kp LG(C)                &kp LG(V)               &kp LS(LG(Z))  &none          &none           &none     &none           &none
+                                &to 4                    &kp LSHFT               &trans         &trans         &trans          &none
             >;
         };
 
         mouse_android {
             bindings = <
-&none      &none      &gqt K_BACK LS(LG(TAB))  &gqt K_FORWARD LC(LG(TAB))  &msc SCRL_UP    &msc SCRL_UP    &msc SCRL_RIGHT  &mmv MOVE_UP    &msc SCRL_LEFT   &kp PAGE_UP
-&kp LG(A)  &mkp RCLK  &mkp MCLK                &mkp LCLK                   &msc SCRL_DOWN  &msc SCRL_DOWN  &mmv MOVE_LEFT   &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp PAGE_DOWN
-&none      &none      &kp LG(C)                &kp LG(V)                   &none           &trans          &trans           &trans          &trans           &trans
-                      &to 4                    &trans                      &trans          &trans          &trans           &trans
+&none           &msc SCRL_UP  &gqt K_BACK LS(LG(TAB))  &gqt K_FORWARD LC(LG(TAB))  &msc SCRL_UP    &msc SCRL_UP    &msc SCRL_RIGHT  &mmv MOVE_UP    &msc SCRL_LEFT   &none
+&msc SCRL_DOWN  &mkp RCLK     &mkp MCLK                &mkp LCLK                   &msc SCRL_DOWN  &msc SCRL_DOWN  &mmv MOVE_LEFT   &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none
+&none           &none         &kp LG(C)                &kp LG(V)                   &none           &none           &none            &none           &none            &none
+                              &to 4                    &trans                      &trans          &trans          &trans           &none
             >;
         };
 
