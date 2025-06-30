@@ -287,10 +287,10 @@
 
         navi {
             bindings = <
-&none           &msc SCRL_UP       &gqt LG(LEFT_ARROW) LC(LS(TAB))  &gqt LG(RIGHT) LC(TAB)  &kp LG(Z)      &msc SCRL_UP    &kp LA(LEFT)        &kp UP_ARROW           &kp LA(RIGHT)         &none
-&msc SCRL_DOWN  &kp LEFT_SHIFT     &sk LEFT_CONTROL                 &sk LEFT_GUI            &sk LEFT_ALT   &msc SCRL_DOWN  &gqt LG(LEFT) LEFT  &kp DOWN               &gqt LG(RIGHT) RIGHT  &none
-&to 2           &kp LA(LC(LG(Y)))  &kp LG(C)                        &kp LG(V)               &kp LG(LS(Z))  &none           &kp LA(LC(LG(Y)))   &kp LS(LC(LA(LG(Y))))  &none                 &kp LA(LC(LG(R)))
-                                   &to 0                            &trans                  &trans         &trans          &trans              &none
+&none           &msc SCRL_UP       &gqt LG(LEFT_ARROW) LC(LS(TAB))  &gqt LG(RIGHT) LC(TAB)  &kp LG(Z)      &kp PAGE_UP    &kp LA(LEFT)        &kp UP_ARROW           &kp LA(RIGHT)         &none
+&msc SCRL_DOWN  &kp LEFT_SHIFT     &sk LEFT_CONTROL                 &sk LEFT_GUI            &sk LEFT_ALT   &kp PAGE_DOWN  &gqt LG(LEFT) LEFT  &kp DOWN               &gqt LG(RIGHT) RIGHT  &none
+&to 2           &kp LA(LC(LG(Y)))  &kp LG(C)                        &kp LG(V)               &kp LG(LS(Z))  &none          &kp LA(LC(LG(Y)))   &kp LS(LC(LA(LG(Y))))  &none                 &kp LA(LC(LG(R)))
+                                   &to 0                            &trans                  &trans         &trans         &trans              &none
             >;
         };
 
@@ -341,8 +341,8 @@
 
         aerospace {
             bindings = <
-&none  &none  &none  &none           &none  &kp LA(LC(LS(F)))  &kp LC(MINUS)                       &gqt LC(LG(UP_ARROW)) LC(UP_ARROW)  &kp LC(BACKSLASH)                   &gqt LC(SLASH) LC(COMMA)
-&none  &none  &none  &none           &none  &kp LA(LC(F))      &gqt LC(LG(LEFT)) LC(LEFT_ARROW)    &gqt LC(LG(DOWN)) LC(DOWN)          &gqt LC(LG(RIGHT)) LC(RIGHT)        &kp LA(TAB)
+&none  &none  &none  &none           &none  &kp LA(LC(F))      &kp LC(MINUS)                       &gqt LC(LG(UP_ARROW)) LC(UP_ARROW)  &kp LC(BACKSLASH)                   &gqt LC(SLASH) LC(COMMA)
+&none  &none  &none  &none           &none  &kp LA(LC(LS(F)))  &gqt LC(LG(LEFT)) LC(LEFT_ARROW)    &gqt LC(LG(DOWN)) LC(DOWN)          &gqt LC(LG(RIGHT)) LC(RIGHT)        &kp LA(TAB)
 &none  &none  &none  &none           &none  &none              &gqt LC(LA(NUMBER_1)) LA(NUMBER_1)  &gqt LC(LA(NUMBER_2)) LA(NUMBER_2)  &gqt LA(LC(NUMBER_3)) LA(NUMBER_3)  &gqt LC(LA(NUMBER_4)) LA(NUMBER_4)
               &none  &kp LEFT_SHIFT  &none  &none              &none                               &none
             >;
