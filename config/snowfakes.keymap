@@ -34,13 +34,13 @@
         };
 
         combo_bracket_left {
-            timeout-ms = <15>;
+            timeout-ms = <20>;
             bindings = <&kp LEFT_PARENTHESIS>;
             key-positions = <7 6>;
         };
 
         combo_bracket_right {
-            timeout-ms = <15>;
+            timeout-ms = <20>;
             bindings = <&kp RIGHT_PARENTHESIS>;
             key-positions = <7 8>;
         };
@@ -236,19 +236,6 @@
             key-positions = <31 23 34 26>;
         };
 
-        combo_mouseclick_4 {
-            timeout-ms = <15>;
-            bindings = <&mkp MB4>;
-            key-positions = <2 13>;
-            timeout-ms = <15>;
-        };
-
-        combo_mouseclick_5 {
-            timeout-ms = <15>;
-            bindings = <&mkp MB5>;
-            key-positions = <2 11>;
-            timeout-ms = <15>;
-        };
     };
 
     behaviors {
@@ -297,7 +284,7 @@
         mouse {
             bindings = <
 &trans          &msc SCRL_UP  &gqt LG(LEFT) LS(LC(TAB))  &gqt LG(RIGHT) LC(TAB)  &none   &msc SCRL_UP    &msc SCRL_LEFT  &mmv MOVE_UP    &msc SCRL_RIGHT  &trans
-&msc SCRL_DOWN  &mkp RCLK     &mkp MCLK                  &mkp LCLK               &none   &msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans
+&msc SCRL_DOWN  &mkp MCLK     &mkp RCLK                  &mkp LCLK               &none   &msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans
 &trans          &trans        &kp LG(C)                  &kp LG(V)               &trans  &trans          &trans          &trans          &trans           &trans
                               &to 0                      &trans                  &trans  &trans          &trans          &trans
             >;
@@ -333,7 +320,7 @@
         mouse_android {
             bindings = <
 &none           &msc SCRL_UP  &gqt K_BACK LS(LG(TAB))  &gqt K_FORWARD LC(LG(TAB))  &msc SCRL_UP    &msc SCRL_UP    &msc SCRL_RIGHT  &mmv MOVE_UP    &msc SCRL_LEFT   &none
-&msc SCRL_DOWN  &mkp RCLK     &mkp MCLK                &mkp LCLK                   &msc SCRL_DOWN  &msc SCRL_DOWN  &mmv MOVE_LEFT   &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none
+&msc SCRL_DOWN  &mkp MCLK     &mkp RCLK                &mkp LCLK                   &msc SCRL_DOWN  &msc SCRL_DOWN  &mmv MOVE_LEFT   &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none
 &none           &none         &kp LG(C)                &kp LG(V)                   &none           &none           &none            &none           &none            &none
                               &to 4                    &trans                      &trans          &trans          &trans           &none
             >;
