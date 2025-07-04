@@ -1,5 +1,5 @@
-// Copyright 2025 saikocat (@saikocat)
 // SPDX-License-Identifier: MIT
+// Copyright 2025 saikocat (@saikocat)
 
 #include <behaviors/rgbled_widget.dtsi>
 
@@ -237,13 +237,13 @@
         };
 
         combo_mouse4 {
-            timeout-ms = <20>;
+            timeout-ms = <10>;
             bindings = <&mkp MB4>;
             key-positions = <2 11>;
         };
 
         combo_mouse5 {
-            timeout-ms = <20>;
+            timeout-ms = <10>;
             bindings = <&mkp MB5>;
             key-positions = <2 13>;
         };
