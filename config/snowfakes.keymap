@@ -285,10 +285,10 @@
 
         navi {
             bindings = <
-&none           &msc SCRL_UP    &gqt LG(LEFT_ARROW) LC(LS(TAB))  &gqt LG(RIGHT) LC(TAB)  &kp LG(Z)      &msc SCRL_UP    &kp LA(LEFT)        &kp UP_ARROW  &kp LA(RIGHT)         &none
-&msc SCRL_DOWN  &kp LEFT_SHIFT  &sk LEFT_CONTROL                 &sk LEFT_GUI            &sk LEFT_ALT   &msc SCRL_DOWN  &gqt LG(LEFT) LEFT  &kp DOWN      &gqt LG(RIGHT) RIGHT  &none
-&to 2           &none           &kp LG(C)                        &kp LG(V)               &kp LG(LS(Z))  &none           &none               &none         &none                 &kp LA(LC(LG(R)))
-                                &to 0                            &trans                  &trans         &trans          &trans              &none
+&none           &msc SCRL_UP    &gqt LG(LEFT_ARROW) LC(LS(TAB))  &gqt LG(RIGHT) LC(TAB)  &kp LG(Z)      &msc SCRL_UP    &kp LA(LEFT)  &kp UP_ARROW  &kp LA(RIGHT)  &none
+&msc SCRL_DOWN  &kp LEFT_SHIFT  &sk LEFT_CONTROL                 &sk LEFT_GUI            &sk LEFT_ALT   &msc SCRL_DOWN  &kp LEFT      &kp DOWN      &kp RIGHT      &none
+&to 2           &none           &kp LG(C)                        &kp LG(V)               &kp LG(LS(Z))  &none           &none         &none         &none          &kp LA(LC(LG(R)))
+                                &to 0                            &trans                  &trans         &trans          &trans        &none
             >;
         };
 
