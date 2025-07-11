@@ -141,15 +141,15 @@
             key-positions = <34 19>;
         };
 
-        combo_spaces_left {
+        combo_paste {
             timeout-ms = <25>;
-            bindings = <&kp F7>;
-            key-positions = <0 10>;
+            bindings = <&kp LG(V)>;
+            key-positions = <10 20>;
         };
 
-        combo_spaces_right {
+        combo_copy {
             timeout-ms = <25>;
-            bindings = <&kp F9>;
+            bindings = <&kp LG(C)>;
             key-positions = <4 14>;
         };
 
@@ -187,12 +187,6 @@
             timeout-ms = <35>;
             bindings = <&kp BACKSPACE>;
             key-positions = <20 21 22 23>;
-        };
-
-        combo_cmd_w {
-            timeout-ms = <35>;
-            bindings = <&kp LG(W)>;
-            key-positions = <0 1 2 3 0 1 2 3>;
         };
 
         combo_mouseclick_left {
@@ -259,6 +253,16 @@
             tapping-term-ms = <180>;
             flavor = "tap-preferred";
         };
+
+        gqt_mkp: gqt_mkp {
+            compatible = "zmk,behavior-hold-tap";
+            label = "GQT_MKP";
+            bindings = <&mkp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <180>;
+            flavor = "tap-preferred";
+        };
     };
 
     macros {
@@ -276,19 +280,19 @@
         layer_base {
             display-name = "qwerty";
             bindings = <
-&gqt TILDE Q  &kp W  &kp E         &kp R            &kp T                 &kp Y                 &kp U                         &kp I                    &kp O                      &gqt SQT P
-&kp A         &kp S  &gqt TAB D    &gqt LEFT_GUI F  &kp G                 &gqt LS(LG(H)) H      &gqt LEFT_ALT J               &kp K                    &kp L                      &gqt MINUS SEMI
-&kp Z         &kp X  &gqt LG(C) C  &gqt LG(V) V     &gqt LG(B) B          &kp N                 &kp M                         &gqt LEFT_BRACKET COMMA  &gqt RIGHT_BRACKET PERIOD  &gqt BACKSLASH SLASH
-                     &mo 1         &kp LSHIFT       &gqt LS(ENTER) ENTER  &gqt LG(SPACE) SPACE  &gqt LG(BACKSPACE) BACKSPACE  &mo 7
+&gqt TILDE Q  &kp W  &kp E       &kp R            &kp T                 &kp Y                 &kp U                         &kp I                    &kp O                      &gqt SQT P
+&kp A         &kp S  &gqt TAB D  &gqt LEFT_GUI F  &kp G                 &gqt LS(LG(H)) H      &gqt LEFT_ALT J               &kp K                    &kp L                      &gqt MINUS SEMI
+&kp Z         &kp X  &kp C       &kp V            &gqt LG(B) B          &kp N                 &kp M                         &gqt LEFT_BRACKET COMMA  &gqt RIGHT_BRACKET PERIOD  &gqt BACKSLASH SLASH
+                     &mo 1       &kp LSHIFT       &gqt LS(ENTER) ENTER  &gqt LG(SPACE) SPACE  &gqt LG(BACKSPACE) BACKSPACE  &mo 7
             >;
         };
 
         navi {
             bindings = <
-&none           &msc SCRL_UP    &gqt LG(LEFT_ARROW) LC(LS(TAB))  &gqt LG(RIGHT) LC(TAB)  &kp LG(Z)      &msc SCRL_UP    &kp LA(LEFT)  &kp UP_ARROW  &kp LA(RIGHT)  &none
-&msc SCRL_DOWN  &kp LEFT_SHIFT  &sk LEFT_CONTROL                 &sk LEFT_GUI            &sk LEFT_ALT   &msc SCRL_DOWN  &kp LEFT      &kp DOWN      &kp RIGHT      &none
-&to 2           &none           &kp LG(C)                        &kp LG(V)               &kp LG(LS(Z))  &none           &none         &none         &none          &kp LA(LC(LG(R)))
-                                &to 0                            &trans                  &trans         &trans          &trans        &none
+&none           &msc SCRL_UP    &gqt_mkp MB4 LC(LS(TAB))  &gqt_mkp MB5 LC(TAB)  &kp LG(Z)      &msc SCRL_UP    &kp LA(LEFT)  &kp UP_ARROW  &kp LA(RIGHT)  &none
+&msc SCRL_DOWN  &kp LEFT_SHIFT  &sk LEFT_CONTROL          &sk LEFT_GUI          &sk LEFT_ALT   &msc SCRL_DOWN  &kp LEFT      &kp DOWN      &kp RIGHT      &none
+&to 2           &none           &kp LG(C)                 &kp LG(V)             &kp LG(LS(Z))  &none           &none         &none         &none          &kp LA(LC(LG(R)))
+                                &to 0                     &trans                &trans         &trans          &trans        &none
             >;
         };
 
@@ -321,10 +325,10 @@
 
         nav_android {
             bindings = <
-&none           &msc SCRL_UP    &gqt K_BACK LS(LG(TAB))  &gqt K_FORWARD LG(TAB)  &kp LG(Z)      &kp PAGE_UP    &kp LG(LEFT)    &kp UP    &kp LG(RIGHT)   &none
-&msc SCRL_DOWN  &kp LEFT_SHIFT  &sk LCTRL                &sk LEFT_GUI            &sk LEFT_ALT   &kp PAGE_DOWN  &gqt HOME LEFT  &kp DOWN  &gqt END RIGHT  &none
-&to 6           &none           &kp LG(C)                &kp LG(V)               &kp LS(LG(Z))  &none          &none           &none     &none           &none
-                                &to 4                    &kp LSHFT               &trans         &trans         &trans          &none
+&none           &msc SCRL_UP    &gqt_mkp MB4 LS(LG(TAB))  &gqt_mkp MB5 LG(TAB)  &kp LG(Z)      &kp PAGE_UP    &kp LG(LEFT)    &kp UP    &kp LG(RIGHT)   &none
+&msc SCRL_DOWN  &kp LEFT_SHIFT  &sk LCTRL                 &sk LEFT_GUI          &sk LEFT_ALT   &kp PAGE_DOWN  &gqt HOME LEFT  &kp DOWN  &gqt END RIGHT  &none
+&to 6           &none           &kp LG(C)                 &kp LG(V)             &kp LS(LG(Z))  &none          &none           &none     &none           &none
+                                &to 4                     &kp LSHFT             &trans         &trans         &trans          &none
             >;
         };
 
