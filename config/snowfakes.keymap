@@ -144,13 +144,13 @@
         combo_paste {
             timeout-ms = <25>;
             bindings = <&kp LG(V)>;
-            key-positions = <10 20>;
+            key-positions = <2 3>;
         };
 
         combo_copy {
             timeout-ms = <25>;
             bindings = <&kp LG(C)>;
-            key-positions = <4 14>;
+            key-positions = <2 1>;
         };
 
         combo_track_prev {
