@@ -144,13 +144,13 @@
         combo_paste {
             timeout-ms = <25>;
             bindings = <&kp LG(V)>;
-            key-positions = <4 14>;
+            key-positions = <10 20>;
         };
 
         combo_copy {
             timeout-ms = <25>;
             bindings = <&kp LG(C)>;
-            key-positions = <3 13>;
+            key-positions = <3 2>;
         };
 
         combo_track_prev {
@@ -192,19 +192,19 @@
         combo_mouseclick_left {
             timeout-ms = <15>;
             bindings = <&mkp LCLK>;
-            key-positions = <3 2>;
+            key-positions = <3 13>;
         };
 
         combo_mouseclick_right {
             timeout-ms = <15>;
             bindings = <&mkp RCLK>;
-            key-positions = <2 1>;
+            key-positions = <2 12>;
         };
 
         combo_mouseclick_middle {
             timeout-ms = <15>;
             bindings = <&mkp MCLK>;
-            key-positions = <1 2 3>;
+            key-positions = <11 12 13>;
         };
 
         combo_change_lang_android {
