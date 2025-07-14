@@ -229,18 +229,6 @@
             bindings = <&macro_skmr>;
             key-positions = <31 23 34 26>;
         };
-
-        combo_mouse4 {
-            timeout-ms = <10>;
-            bindings = <&mkp MB4>;
-            key-positions = <2 11>;
-        };
-
-        combo_mouse5 {
-            timeout-ms = <10>;
-            bindings = <&mkp MB5>;
-            key-positions = <2 13>;
-        };
     };
 
     behaviors {
