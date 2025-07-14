@@ -144,7 +144,7 @@
         combo_paste {
             timeout-ms = <25>;
             bindings = <&kp LG(V)>;
-            key-positions = <10 20>;
+            key-positions = <3 4>;
         };
 
         combo_copy {
