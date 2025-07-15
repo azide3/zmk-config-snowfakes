@@ -171,12 +171,6 @@
             key-positions = <13 14 15 16>;
         };
 
-        combo_spaces {
-            timeout-ms = <25>;
-            bindings = <&kp F8>;
-            key-positions = <1 3>;
-        };
-
         combo_moom_toggle {
             timeout-ms = <25>;
             bindings = <&kp LA(LC(LG(E)))>;
