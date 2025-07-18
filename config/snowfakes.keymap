@@ -325,10 +325,10 @@
 
         aerospace {
             bindings = <
-&kp LA(LC(Q))  &kp LA(LC(W))  &kp LA(LC(E))  &kp LA(LC(R))   &kp LA(LC(T))  &msc SCRL_UP                          &kp LC(MINUS)                       &gqt LC(LG(UP_ARROW)) LC(UP_ARROW)  &kp LC(BACKSLASH)                   &gqt LC(SLASH) LC(COMMA)
-&kp LA(LC(A))  &kp LA(LC(S))  &kp LA(LC(D))  &kp LA(LC(F))   &kp LA(LC(G))  &msc SCRL_DOWN                        &gqt LC(LG(LEFT)) LC(LEFT_ARROW)    &gqt LC(LG(DOWN)) LC(DOWN)          &gqt LC(LG(RIGHT)) LC(RIGHT)        &gqt LA(LC(N5)) LA(N5)
-&none          &none          &none          &none           &none          &gqt LA(LG(LC(LS(F)))) LA(LC(LG(F)))  &gqt LC(LA(NUMBER_1)) LA(NUMBER_1)  &gqt LC(LA(NUMBER_2)) LA(NUMBER_2)  &gqt LA(LC(NUMBER_3)) LA(NUMBER_3)  &gqt LC(LA(NUMBER_4)) LA(NUMBER_4)
-                              &mo 1          &kp LEFT_SHIFT  &none          &none                                 &none                               &none
+&kp LA(LC(Q))  &kp LA(LC(W))  &kp LA(LC(E))  &kp LA(LC(R))   &kp LA(LC(T))      &msc SCRL_UP                          &msc SCRL_LEFT                      &gqt LC(LG(UP_ARROW)) LC(UP_ARROW)  &msc SCRL_RIGHT                     &gqt LC(SLASH) LC(COMMA)
+&kp LA(LC(A))  &kp LA(LC(S))  &kp LA(LC(D))  &kp LA(LC(F))   &kp LA(LC(G))      &msc SCRL_DOWN                        &gqt LC(LG(LEFT)) LC(LEFT_ARROW)    &gqt LC(LG(DOWN)) LC(DOWN)          &gqt LC(LG(RIGHT)) LC(RIGHT)        &gqt LA(LC(N5)) LA(N5)
+&none          &none          &none          &kp LA(MINUS)   &kp LA(BACKSLASH)  &gqt LA(LG(LC(LS(F)))) LA(LC(LG(F)))  &gqt LC(LA(NUMBER_1)) LA(NUMBER_1)  &gqt LC(LA(NUMBER_2)) LA(NUMBER_2)  &gqt LA(LC(NUMBER_3)) LA(NUMBER_3)  &gqt LC(LA(NUMBER_4)) LA(NUMBER_4)
+                              &mo 1          &kp LEFT_SHIFT  &none              &none                                 &none                               &none
             >;
         };
     };
