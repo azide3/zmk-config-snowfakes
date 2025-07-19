@@ -262,10 +262,10 @@
         layer_base {
             display-name = "qwerty";
             bindings = <
-&gqt TILDE Q  &kp W  &kp E       &kp R       &kp T                 &kp Y                 &kp U                         &kp I                    &kp O                      &gqt SQT P
-&kp A         &kp S  &gqt TAB D  &kp F       &kp G                 &gqt LS(LG(H)) H      &gqt LEFT_ALT J               &kp K                    &kp L                      &gqt MINUS SEMI
-&kp Z         &kp X  &kp C       &kp V       &gqt LG(B) B          &kp N                 &kp M                         &gqt LEFT_BRACKET COMMA  &gqt RIGHT_BRACKET PERIOD  &gqt BACKSLASH SLASH
-                     &mo 1       &kp LSHIFT  &gqt LS(ENTER) ENTER  &gqt LG(SPACE) SPACE  &gqt LG(BACKSPACE) BACKSPACE  &mo 7
+&gqt TILDE Q  &kp W  &kp E       &kp R            &kp T                 &kp Y                 &kp U                         &kp I                    &kp O                      &gqt SQT P
+&kp A         &kp S  &gqt TAB D  &gqt LEFT_GUI F  &kp G                 &gqt LS(LG(H)) H      &gqt LEFT_ALT J               &kp K                    &kp L                      &gqt MINUS SEMI
+&kp Z         &kp X  &kp C       &kp V            &gqt LG(B) B          &kp N                 &kp M                         &gqt LEFT_BRACKET COMMA  &gqt RIGHT_BRACKET PERIOD  &gqt BACKSLASH SLASH
+                     &mo 1       &kp LSHIFT       &gqt LS(ENTER) ENTER  &gqt LG(SPACE) SPACE  &gqt LG(BACKSPACE) BACKSPACE  &mo 7
             >;
         };
 
@@ -298,10 +298,10 @@
 
         base_android {
             bindings = <
-&gqt TILDE Q  &kp W  &kp E         &kp R         &kp T                 &kp Y             &kp U                    &kp I                    &kp O                      &gqt SQT P
-&kp A         &kp S  &gqt TAB D    &kp F         &kp G                 &gqt LS(LG(H)) H  &gqt LEFT_GUI J          &kp K                    &kp L                      &gqt MINUS SEMICOLON
-&kp Z         &kp X  &gqt LG(C) C  &gqt LG(V) V  &gqt LG(B) B          &kp N             &kp M                    &gqt LEFT_BRACKET COMMA  &gqt RIGHT_BRACKET PERIOD  &gqt BACKSLASH SLASH
-                     &mo 5         &kp LSHFT     &gqt LS(ENTER) ENTER  &kp SPACE         &gqt LA(BSPC) BACKSPACE  &to 5
+&gqt TILDE Q  &kp W  &kp E         &kp R            &kp T                 &kp Y             &kp U                    &kp I                    &kp O                      &gqt SQT P
+&kp A         &kp S  &gqt TAB D    &gqt LEFT_GUI F  &kp G                 &gqt LS(LG(H)) H  &gqt LEFT_GUI J          &kp K                    &kp L                      &gqt MINUS SEMICOLON
+&kp Z         &kp X  &gqt LG(C) C  &gqt LG(V) V     &gqt LG(B) B          &kp N             &kp M                    &gqt LEFT_BRACKET COMMA  &gqt RIGHT_BRACKET PERIOD  &gqt BACKSLASH SLASH
+                     &mo 5         &kp LSHFT        &gqt LS(ENTER) ENTER  &kp SPACE         &gqt LA(BSPC) BACKSPACE  &to 5
             >;
         };
 
