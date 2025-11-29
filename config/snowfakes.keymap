@@ -281,7 +281,7 @@
 
         navi {
             bindings = <
-&none           &msc SCRL_UP    &gqt_mkp MB4 LC(LS(TAB))  &gqt_mkp MB5 LC(TAB)  &kp LG(Z)      &kp PAGE_UP    &kp LA(LEFT)  &kp UP_ARROW  &kp LA(RIGHT)  &none
+&sl 7           &msc SCRL_UP    &gqt_mkp MB4 LC(LS(TAB))  &gqt_mkp MB5 LC(TAB)  &kp LG(Z)      &kp PAGE_UP    &kp LA(LEFT)  &kp UP_ARROW  &kp LA(RIGHT)  &none
 &msc SCRL_DOWN  &kp LEFT_SHIFT  &sk LEFT_CONTROL          &sk LEFT_GUI          &sk LEFT_ALT   &kp PAGE_DOWN  &kp LEFT      &kp DOWN      &kp RIGHT      &none
 &to 2           &none           &kp LG(C)                 &kp LG(V)             &kp LG(LS(Z))  &none          &none         &none         &none          &kp LA(LC(LG(R)))
                                 &to 0                     &trans                &trans         &trans         &trans        &none
