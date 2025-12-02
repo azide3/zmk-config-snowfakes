@@ -275,16 +275,16 @@
 &gqt TILDE Q  &kp W  &kp E       &kp R                &kp T                 &kp Y                 &kp U                         &kp I                    &kp O                      &gqt SQT P
 &kp A         &kp S  &gqt TAB D  &mod_tap LEFT_GUI F  &kp G                 &kp H                 &mod_tap LEFT_ALT J           &kp K                    &kp L                      &kp SEMICOLON
 &kp Z         &kp X  &kp C       &kp V                &gqt LG(B) B          &kp N                 &kp M                         &gqt LEFT_BRACKET COMMA  &gqt RIGHT_BRACKET PERIOD  &gqt BACKSLASH SLASH
-                     &mo 1       &kp LSHIFT           &gqt LS(ENTER) ENTER  &gqt LG(SPACE) SPACE  &gqt LG(BACKSPACE) BACKSPACE  &mo 7
+                     &mo 1       &kp LSHIFT           &gqt LS(ENTER) ENTER  &gqt LG(SPACE) SPACE  &gqt LG(BACKSPACE) BACKSPACE  &mo 4
             >;
         };
 
         navi {
             bindings = <
-&sl 7           &msc SCRL_UP    &gqt_mkp MB4 LC(LS(TAB))  &gqt_mkp MB5 LC(TAB)  &kp LG(Z)      &kp PAGE_UP    &kp LA(LEFT)  &kp UP_ARROW  &kp LA(RIGHT)  &none
-&msc SCRL_DOWN  &kp LEFT_SHIFT  &sk LEFT_CONTROL          &sk LEFT_GUI          &sk LEFT_ALT   &kp PAGE_DOWN  &kp LEFT      &kp DOWN      &kp RIGHT      &none
-&to 2           &none           &kp LG(C)                 &kp LG(V)             &kp LG(LS(Z))  &none          &none         &none         &none          &kp LA(LC(LG(R)))
-                                &to 0                     &trans                &trans         &trans         &trans        &none
+&sl 4           &msc SCRL_UP       &gqt_mkp MB4 LC(LS(TAB))  &gqt_mkp MB5 LC(TAB)  &kp LG(Z)      &kp PAGE_UP    &kp LA(LEFT)  &kp UP_ARROW  &kp LA(RIGHT)  &none
+&msc SCRL_DOWN  &kp LEFT_SHIFT     &sk LEFT_CONTROL          &sk LEFT_GUI          &sk LEFT_ALT   &kp PAGE_DOWN  &kp LEFT      &kp DOWN      &kp RIGHT      &none
+&to 2           &kp LA(LC(LG(Y)))  &kp LG(C)                 &kp LG(V)             &kp LG(LS(Z))  &none          &none         &none         &none          &kp LA(LC(LG(R)))
+                                   &to 0                     &trans                &trans         &trans         &trans        &none
             >;
         };
 
@@ -293,43 +293,16 @@
 &trans          &msc SCRL_UP  &gqt LG(LEFT) LS(LC(TAB))  &gqt LG(RIGHT) LC(TAB)  &none   &msc SCRL_UP    &msc SCRL_LEFT  &mmv MOVE_UP    &msc SCRL_RIGHT  &trans
 &msc SCRL_DOWN  &mkp MCLK     &mkp RCLK                  &mkp LCLK               &none   &msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans
 &trans          &trans        &kp LG(C)                  &kp LG(V)               &trans  &trans          &trans          &trans          &trans           &trans
-                              &to 0                      &trans                  &trans  &trans          &trans          &mo 8
+                              &to 0                      &trans                  &trans  &trans          &trans          &mo 5
             >;
         };
 
         bt_setting {
             bindings = <
 &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3   &bt BT_SEL 4  &trans  &trans  &trans  &trans  &trans
-&trans        &trans        &trans        &kp LG(SPACE)  &to 4         &trans  &trans  &trans  &trans  &trans
+&trans        &trans        &trans        &kp LG(SPACE)  &none         &trans  &trans  &trans  &trans  &trans
 &bt BT_CLR    &trans        &trans        &trans         &trans        &trans  &trans  &trans  &trans  &trans
                             &to 0         &trans         &trans        &trans  &trans  &trans
-            >;
-        };
-
-        base_android {
-            bindings = <
-&gqt TILDE Q  &kp W  &kp E         &kp R                &kp T                 &kp Y      &kp U                    &kp I                    &kp O                      &gqt SQT P
-&kp A         &kp S  &gqt TAB D    &mod_tap LEFT_GUI F  &kp G                 &kp H      &mod_tap LEFT_GUI J      &kp K                    &kp L                      &gqt MINUS SEMICOLON
-&kp Z         &kp X  &gqt LG(C) C  &gqt LG(V) V         &gqt LG(B) B          &kp N      &kp M                    &gqt LEFT_BRACKET COMMA  &gqt RIGHT_BRACKET PERIOD  &gqt BACKSLASH SLASH
-                     &mo 5         &kp LSHFT            &gqt LS(ENTER) ENTER  &kp SPACE  &gqt LA(BSPC) BACKSPACE  &to 5
-            >;
-        };
-
-        nav_android {
-            bindings = <
-&none           &msc SCRL_UP    &gqt_mkp MB4 LS(LG(TAB))  &gqt_mkp MB5 LG(TAB)  &kp LG(Z)      &kp PAGE_UP    &kp LG(LEFT)    &kp UP    &kp LG(RIGHT)   &none
-&msc SCRL_DOWN  &kp LEFT_SHIFT  &sk LCTRL                 &sk LEFT_GUI          &sk LEFT_ALT   &kp PAGE_DOWN  &gqt HOME LEFT  &kp DOWN  &gqt END RIGHT  &none
-&to 6           &none           &kp LG(C)                 &kp LG(V)             &kp LS(LG(Z))  &none          &none           &none     &none           &none
-                                &to 4                     &kp LSHFT             &trans         &trans         &trans          &none
-            >;
-        };
-
-        mouse_android {
-            bindings = <
-&none           &msc SCRL_UP  &gqt K_BACK LS(LG(TAB))  &gqt K_FORWARD LC(LG(TAB))  &msc SCRL_UP    &msc SCRL_UP    &msc SCRL_RIGHT  &mmv MOVE_UP    &msc SCRL_LEFT   &none
-&msc SCRL_DOWN  &mkp MCLK     &mkp RCLK                &mkp LCLK                   &msc SCRL_DOWN  &msc SCRL_DOWN  &mmv MOVE_LEFT   &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none
-&none           &none         &kp LG(C)                &kp LG(V)                   &none           &none           &none            &none           &none            &none
-                              &to 4                    &trans                      &trans          &trans          &trans           &none
             >;
         };
 
@@ -338,7 +311,7 @@
 &kp LA(LC(Q))  &kp LA(LC(W))  &kp LA(LC(E))  &kp LA(LC(R))      &kp LA(LC(T))  &msc SCRL_UP                          &msc SCRL_LEFT                      &gqt LC(LG(UP_ARROW)) LC(UP_ARROW)  &msc SCRL_RIGHT                     &gqt LC(SLASH) LC(COMMA)
 &kp LA(LC(A))  &kp LA(LC(S))  &kp LA(LC(D))  &kp LEFT_GUI       &kp LA(LC(G))  &msc SCRL_DOWN                        &gqt LC(LG(LEFT)) LC(LEFT_ARROW)    &gqt LC(LG(DOWN)) LC(DOWN)          &gqt LC(LG(RIGHT)) LC(RIGHT)        &gqt LS(LA(TAB)) LA(TAB)
 &none          &none          &kp LC(MINUS)  &kp LC(BACKSLASH)  &none          &gqt LA(LG(LC(LS(F)))) LA(LC(LG(F)))  &gqt LC(LA(NUMBER_1)) LA(NUMBER_1)  &gqt LC(LA(NUMBER_2)) LA(NUMBER_2)  &gqt LA(LC(NUMBER_3)) LA(NUMBER_3)  &gqt LC(LA(NUMBER_4)) LA(NUMBER_4)
-                              &mo 8          &kp LEFT_SHIFT     &kp LC(ENTER)  &none                                 &none                               &none
+                              &mo 5          &kp LEFT_SHIFT     &kp LC(ENTER)  &none                                 &none                               &none
             >;
         };
 
@@ -348,6 +321,15 @@
 &none  &none  &none  &none  &none  &none  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT  &none
 &to 2  &none  &none  &none  &none  &none  &none           &none           &none            &none
               &none  &none  &none  &none  &none           &none
+            >;
+        };
+
+        hyper {
+            bindings = <
+&trans  &kp W   &kp E   &kp R   &kp T   &kp Y   &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
