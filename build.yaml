@@ -13,9 +13,9 @@
 #
 ---
 include:
-  - board: nice_nano
+  - board: nice_nano@2.0.0//zmk
     shield: snowfakes_left rgbled_adapter
-  - board: nice_nano
+  - board: nice_nano@2.0.0//zmk
     shield: snowfakes_right rgbled_adapter
-  - board: nice_nano
+  - board: nice_nano@2.0.0//zmk
     shield: settings_reset
