@@ -223,6 +223,11 @@
             bindings = <&macro_skmr>;
             key-positions = <31 23 34 26>;
         };
+
+        combo_alt_backspace {
+            bindings = <&kp LA(BACKSPACE)>;
+            key-positions = <18 17 16>;
+        };
     };
 
     behaviors {
