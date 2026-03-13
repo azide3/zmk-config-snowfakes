@@ -226,12 +226,12 @@
 
         combo_alt_backspace {
             bindings = <&kp LA(BACKSPACE)>;
-            key-positions = <18 17 19>;
+            key-positions = <18 17 19 16>;
         };
 
         combo_backspace2 {
             bindings = <&kp BACKSPACE>;
-            key-positions = <18 17 16 19>;
+            key-positions = <18 17 16>;
         };
     };
 
