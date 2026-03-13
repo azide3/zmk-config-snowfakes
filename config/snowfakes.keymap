@@ -236,7 +236,7 @@
 
         combo_cmd_backspace {
             bindings = <&kp LG(BACKSPACE)>;
-            key-positions = <19 18 16 17 34>;
+            key-positions = <19 18 16 17>;
         };
     };
 
