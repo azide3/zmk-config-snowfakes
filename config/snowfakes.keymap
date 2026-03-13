@@ -180,7 +180,7 @@
         combo_backspace {
             timeout-ms = <35>;
             bindings = <&kp BACKSPACE>;
-            key-positions = <20 21 22 23>;
+            key-positions = <10 11 12 13>;
         };
 
         combo_mouseclick_left {
