@@ -233,6 +233,11 @@
             bindings = <&kp BACKSPACE>;
             key-positions = <18 17 16>;
         };
+
+        combo_cmd_backspace {
+            bindings = <&kp LG(BACKSPACE)>;
+            key-positions = <19 18 16 17 34>;
+        };
     };
 
     behaviors {
