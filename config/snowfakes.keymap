@@ -287,10 +287,10 @@
         layer_base {
             display-name = "qwerty";
             bindings = <
-&gqt TILDE Q  &kp W  &kp E       &kp R                &kp T                 &kp Y                 &kp U                         &kp I                    &kp O                      &gqt SQT P
-&kp A         &kp S  &gqt TAB D  &mod_tap LEFT_GUI F  &kp G                 &kp H                 &mod_tap LEFT_ALT J           &kp K                    &kp L                      &kp SEMICOLON
-&kp Z         &kp X  &kp C       &kp V                &gqt LG(B) B          &kp N                 &kp M                         &gqt LEFT_BRACKET COMMA  &gqt RIGHT_BRACKET PERIOD  &gqt BACKSLASH SLASH
-                     &mo 1       &kp LSHIFT           &gqt LS(ENTER) ENTER  &gqt LG(SPACE) SPACE  &gqt LG(BACKSPACE) BACKSPACE  &mo 4
+&gqt TILDE Q  &kp W  &kp E       &kp R            &kp T                 &kp Y                 &kp U                         &kp I                    &kp O                      &gqt SQT P
+&kp A         &kp S  &gqt TAB D  &gqt LEFT_GUI F  &kp G                 &kp H                 &gqt LEFT_ALT J               &kp K                    &kp L                      &kp SEMICOLON
+&kp Z         &kp X  &kp C       &kp V            &gqt LG(B) B          &kp N                 &kp M                         &gqt LEFT_BRACKET COMMA  &gqt RIGHT_BRACKET PERIOD  &gqt BACKSLASH SLASH
+                     &mo 1       &kp LSHIFT       &gqt LS(ENTER) ENTER  &gqt LG(SPACE) SPACE  &gqt LG(BACKSPACE) BACKSPACE  &mo 4
             >;
         };
 
@@ -299,7 +299,7 @@
 &gqt LS(LA(TAB)) LA(TAB)  &msc SCRL_UP                      &gqt_mkp MB4 LC(LS(TAB))  &gqt_mkp MB5 LC(TAB)  &kp LG(Z)      &kp PAGE_UP    &kp LA(LEFT)       &kp UP_ARROW  &kp LA(RIGHT)  &none
 &msc SCRL_DOWN            &kp LEFT_SHIFT                    &sk LEFT_CONTROL          &sk LEFT_GUI          &sk LEFT_ALT   &kp PAGE_DOWN  &kp LEFT           &kp DOWN      &kp RIGHT      &none
 &to 2                     &gqt LA(LC(LG(U))) LA(LC(LG(Y)))  &kp LG(C)                 &kp LG(V)             &kp LG(LS(Z))  &none          &kp LA(LC(LG(Q)))  &none         &none          &kp LA(LC(LG(R)))
-                                                            &to 0                     &trans                &trans         &trans         &trans             &none
+                                                            &to 0                     &trans                &trans         &trans         &trans             &mo 5
             >;
         };
 
