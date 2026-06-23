@@ -238,6 +238,11 @@
             bindings = <&kp LG(BACKSPACE)>;
             key-positions = <19 18 16 17>;
         };
+
+        combo_mouseclick_double {
+            bindings = <&macro_doubleclick>;
+            key-positions = <0 10>;
+        };
     };
 
     behaviors {
@@ -278,6 +283,18 @@
             #binding-cells = <0>;
             bindings = <&none &kp LS(I) &kp SPACE &kp F &kp E &kp E &kp L &kp SPACE &kp L &kp I &kp K &kp E &kp SPACE &kp W &kp E &kp SPACE &kp H &kp A &kp V &kp E &kp SPACE &kp G &kp O &kp N &kp E &kp SPACE &kp P &kp A &kp S &kp T &kp SPACE &kp S &kp O &kp C &kp I &kp A &kp L &kp SPACE &kp N &kp O &kp R &kp M &kp S &kp SPACE &kp H &kp A &kp H &kp H &kp A &kp A &kp H &kp A &kp H &kp H &kp H>;
             label = "MACRO_SKMR";
+        };
+
+        macro_doubleclick: macro_doubleclick {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&mkp LCLK>,
+                <&macro_release>,
+                <&mkp LCLK>,
+                <&macro_release>;
+
+            label = "MACRO_DOUBLECLICK";
         };
     };
 
